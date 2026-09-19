@@ -1,0 +1,112 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+/*  Typography
+
+ Body Copy
+
+- Font size (paragraph): 16px */
+
+/*  Font
+
+- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
+- Weights: 500, 800 */
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('assets/fonts/static/Figtree-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('assets/fonts/static/Figtree-ExtraBold.ttf');
+    font-weight: 800;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--yellow);
+    font-size: 16px; 
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: var(--white);
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0;
+    padding: 16px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card > img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.label-learning {
+    width: 75px;
+    padding: 5px;
+    color: var(--gray-950);
+    background-color: var(--yellow);
+    border-radius: 5px;
+}
+
+h1 {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--gray-950);
+}
+
+h1:hover{
+    color: var(--yellow);
+}
+
+p {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 500;
+    color: var(--gray-500);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer > img {
+    border-radius: 50%;
+    scale: .75;
+}
+
+.footer > p {
+    color: var(--gray-950);
+    font-weight: 800;
+}
