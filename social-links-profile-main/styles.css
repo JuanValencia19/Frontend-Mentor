@@ -1,0 +1,117 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/static/Inter-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+}
+
+/* ### Body Copy
+
+- Font size (paragraph): 14px */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--grey-900);
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.card {
+    width: 100%;
+    max-width: 384px;
+    background-color: var(--grey-800);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.description-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+}
+
+.description-card > img {
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+    align-self: center;
+    margin-bottom: 12px;
+}
+
+h1 {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.location {
+    color: var(--green);
+    font-weight: 600;
+}
+
+p {
+    color: var(--white);
+    margin-top: 12px;
+    font-weight: 400;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.social-links > a {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--grey-700);
+    padding: 10px 12px;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--green);
+    color: var(--grey-800);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 3px;
+}
